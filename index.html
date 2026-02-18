@@ -46,68 +46,119 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="Images/First Page.jpg" alt="" /></span>
+								<span class="image main"><img src="Images/First Page.jpg" alt="" /></span>
 								<p>I am a Business Analyst with a background in entrepreneurship and systems implementation, currently working in a Business Analysis role. By the way, check out my <a href="#work">awesome work</a>.</p>
 								<p>My work focuses on understanding operational workflows, clarifying business requirements, and supporting system and reporting outcomes that make sense to both business and technical teams.		
 								</p>This portfolio documents practical projects that reflect how I approach analysis in real settings: problem framing, stakeholder thinking, process mapping, and data interpretation. It represents active work, learning, and application.</p>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="Images/Dasboard.jpg" alt="" /></span>
-								<p>Selected projects that show how I approach analysis across data, systems, and reporting.</p>
-								<ul class="actions stacked">
-    <li><a href="#bikegear" class="button">BikeGear Sales Dashboard</a></li>
-    <!-- Add more projects later -->
+<article id="work">
+  <h2 class="major">Projects</h2>
+  <span class="image main"><img src="Images/Dasboard.jpg" alt="" /></span>
+
+  <p>Selected projects that show how I approach analysis across data, systems, and reporting.</p>
+
+  <ul class="actions stacked">
+    <li><a href="#bikegear" class="button">BikeGear Sales Dashboard (Excel)</a></li>
+    <li><a href="#hospital-pbi" class="button">Hospital Operations Dashboard (Power BI)</a></li>
   </ul>
-							</article>
-							<article id="bikegear">
+</article>
+
+<!-- Project: BikeGear -->
+<article id="Bikegear">
   <h2 class="major">Sales Performance Dashboard</h2>
 
   <span class="image main">
     <img src="Images/Dasboard.jpg" alt="BikeGear dashboard" />
+    <img src="Images/Dasboard.jpg" alt="BikeGear dashboard" />
   </span>
 
   <p><strong>Context</strong><br>
-BikeGear Solutions required clear visibility into revenue, cost, profit, and overall sales performance across regions, customers, and products.</p>
+  BikeGear Solutions required clear visibility into revenue, cost, profit, and overall sales performance across regions, customers, and products.</p>
 
-<p><strong>What I worked on</strong><br>
-I began by cleaning and structuring the raw sales data to ensure accuracy and consistency. 
-Customers were grouped into defined customer segments, after which key measures such as revenue, cost, and profit were calculated.
-With a reliable dataset in place, I built pivot tables to analyse performance by time period, product, region, and customer group, and used these insights to design an interactive Excel dashboard.</p>
+  <p><strong>What I worked on</strong><br>
+  I began by cleaning and structuring the raw sales data to ensure accuracy and consistency.
+  Customers were grouped into defined customer segments, after which key measures such as revenue, cost, and profit were calculated.
+  With a reliable dataset in place, I built pivot tables to analyse performance by time period, product, region, and customer group, and used these insights to design an interactive Excel dashboard.</p>
 
-<p><strong>Focus areas</strong><br>
-Data preparation, customer grouping, KPI calculation, performance analysis, and dashboard design.</p>
+  <p><strong>Focus areas</strong><br>
+  Data preparation, customer grouping, KPI calculation, performance analysis, and dashboard design.</p>
 
-<p><strong>Tools</strong><br>
-Excel (data cleaning, PivotTables, charts), basic data modelling.</p>
+  <p><strong>Tools</strong><br>
+  Excel (data cleaning, PivotTables, charts), basic data modelling.</p>
 
-<ul class="actions stacked">
-  <li>
-    <a href="Documents/Analysis Summary Barachel.pdf"
-       class="button primary"
-       target="_blank" rel="noopener">
-       View Recommendations (PDF)
-    </a>
-  </li>
-  <li>
-    <a href="Documents/Sales_Data - Barachel.xlsx"
-       class="button"
-       target="_blank" rel="noopener">
-       Download Excel Workbook
-    </a>
-  </li>
-  <li>
-    <a href="#work" class="button">Back to Work</a>
-  </li>
-</ul>
-
+  <ul class="actions stacked">
+    <li>
+      <a href="Documents/Analysis Summary Barachel.pdf"
+         class="button primary"
+         target="_blank" rel="noopener">
+        View Recommendations (PDF)
+      </a>
+    </li>
+    <li>
+      <a href="Documents/Sales_Data - Barachel.xlsx"
+         class="button"
+         target="_blank" rel="noopener">
+        Download Excel Workbook
+      </a>
+    </li>
+    <li><a href="#work" class="button">Back to Projects</a></li>
+  </ul>
 </article>
+
+<!-- Project: Hospital Power BI -->
+<article id="hospital-pbi">
+  <h2 class="major">Hospital Operations Dashboard (Power BI)</h2>
+
+  <span class="image main">
+    <img src="Images/Hospital Dashboard.png" alt="Hospital dashboard preview" />
+  </span>
+
+  <p><strong>Context and objective</strong><br>
+  This project involved cleaning and modelling raw hospital operational data to produce an interactive Power BI dashboard that supports stakeholder decision-making on patient activity, provider workload, services delivered, and performance trends over time.</p>
+
+  <p><strong>Data used</strong><br>
+  Source: Raw hospital dataset in Microsoft Excel.<br>
+  Content: Transaction-level hospital records (patient, doctor, procedure, location, date fields, plus activity metrics where applicable).</p>
+
+  <p><strong>What was done (high level)</strong></p>
+  <ul>
+    <li><strong>Data ingestion:</strong> Imported and loaded Excel data into Power BI.</li>
+    <li><strong>Data cleaning and preparation (Power Query):</strong> Removed null/blank values where appropriate, removed duplicates, merged tables where needed, and removed staging tables not required for the final model.</li>
+    <li><strong>Data modelling:</strong> Built a star schema with a central fact table (hospital transactions) and supporting dimension tables (Patient, Doctor, Date, Location, Procedure). Created one-to-many relationships using key fields (PatientID, DoctorID, LocationID, ProcedureID, and Date key).</li>
+    <li><strong>DAX calculations:</strong> Created measures for key metrics and comparisons across time, doctors, patients, procedures, and locations.</li>
+    <li><strong>Reporting and visualisation:</strong> Built the dashboard layout to communicate trends and operational insights clearly for stakeholders.</li>
+  </ul>
+
+  <p><strong>Tools</strong><br>
+  Power BI Desktop, Power Query, DAX, Excel.</p>
+
+  <ul class="actions stacked">
+    <li>
+      <a href="Documents/Hospital_PBI_Dashboard.pdf"
+         class="button primary"
+         target="_blank" rel="noopener">
+        View Dashboard (PDF)
+      </a>
+    </li>
+    <li>
+      <a href="Documents/Hospital_PBI_Recommendations.pdf"
+         class="button"
+         target="_blank" rel="noopener">
+        View Recommendations (PDF)
+      </a>
+    </li>
+    <li><a href="#work" class="button">Back to Projects</a></li>
+  </ul>
+</article>
+
 
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
+								<span class="image main"><img src="Images/About.jpg" alt="" /></span>
 								<span class="image main"><img src="Images/About.jpg" alt="" /></span>
 								<p>I moved into Business Analysis eight months ago after working across business operations and Cloud-focused roles where I developed a strong interest in how processes and data shape decision-making. My transition into Business Analysis was intentional as I get to use my business knowledge and tech savyness. 
 								</p> think what I enjoy most about it is I get to work closely with systems, data, and stakeholders which allows me to push my mind outside my own perspective and wear different hats to bring about a concrete solution. I get to wear the hat of a stakeholder, developer and business decision makers to ensure that the proposed solution will speak in the language of these individuals. 
